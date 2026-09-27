@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Asztali PC">
+  <rect x="0" y="92" width="180" height="360" rx="18" fill="#425f60"/>
+  <rect x="0" y="166" width="180" height="60" fill="#54777b"/>
+  <rect x="90" y="92" width="32" height="360" fill="#243a3b" opacity=".75"/>
+  <rect x="122" y="61" width="390" height="300" rx="34" fill="#5d858c"/>
+  <rect x="152" y="91" width="330" height="240" fill="#20b7df"/>
+  <rect x="317" y="91" width="165" height="240" fill="#159bd4"/>
+  <rect x="257" y="361" width="60" height="61" fill="#253d3e"/>
+  <rect x="212" y="421" width="211" height="30" rx="15" fill="#5d858c"/>
+  <circle cx="90" cy="409" r="15" fill="#70e582"/>
+</svg>

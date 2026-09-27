@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: #364766;
+  background: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: inherit;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
