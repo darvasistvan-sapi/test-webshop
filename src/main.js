@@ -9,5 +9,5 @@ const app = createApp(App).use(createPinia())
 
 // Check the stored session before the router's first navigation.
 useAuthStore().restore().finally(() => {
-  app.use(router).mount('#app')
+    app.use(router).mount('#app')
 })

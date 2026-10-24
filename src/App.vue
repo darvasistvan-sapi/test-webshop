@@ -4,36 +4,39 @@ import AppHeader from './components/layout/AppHeader.vue'
 import AppFooter from './components/layout/AppFooter.vue'
 import { useAuthStore } from './stores/auth'
 import { useOrderStore } from './stores/orders'
+import { useCategoryStore } from './stores/categories'
 
 const auth = useAuthStore()
 const orderStore = useOrderStore()
 
+useCategoryStore().load()
+
 // When the user changes (log in/out), other users' orders should not remain in memory.
 watch(
-  () => auth.user?.id,
-  () => orderStore.$reset(),
+    () => auth.user?.id,
+    () => orderStore.$reset(),
 )
 </script>
 
 <template>
-  <div class="app-shell">
-    <AppHeader />
-    <main class="app-main">
-      <RouterView />
-    </main>
-    <AppFooter />
-  </div>
+    <div class="app-shell">
+        <AppHeader />
+        <main class="app-main">
+            <RouterView />
+        </main>
+        <AppFooter />
+    </div>
 </template>
 
 <style scoped>
 .app-shell {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .app-main {
-  flex: 1;
-  width: 100%;
+    flex: 1;
+    width: 100%;
 }
 </style>
 
